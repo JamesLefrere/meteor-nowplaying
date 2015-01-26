@@ -10,21 +10,9 @@ Npm.depends({"nowplaying": "1.0.5"});
 
 Package.onUse(function(api) {
   api.versionsFrom("1.0");
-
-  api.use([
-    "lepozepo:streams@0.2.0"
-  ], ["client", "server"]);
-  api.addFiles([
-    "lib/both/stream.js",
-  ], ["client", "server"]);
-
-  api.use([
-    "coffeescript"
-  ], ["server"]);
-  api.addFiles([
-    "lib/server/nowplaying.coffee",
-  ], "server");
-
+  api.use("lepozepo:streams@0.2.0", ["client", "server"]);
+  api.addFiles("lib/both/stream.js", ["client", "server"]);
+  api.use("coffeescript", "server");
+  api.addFiles("lib/server/nowplaying.coffee", "server");
   api.export("NowPlaying", ["client", "server"]);
-
 });

@@ -1,6 +1,6 @@
 Package.describe({
   name: "jameslefrere:nowplaying",
-  version: "0.1.0",
+  version: "0.1.1",
   summary: "Integration with iTunes/Spotify/etc via nowplaying npm",
   git: "https://github.com/JamesLefrere/meteor-nowplaying.git",
   documentation: "README.md"
